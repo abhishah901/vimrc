@@ -1,3 +1,7 @@
+let g:pymode_python = 'python3'
+
+if has('python3')
+endif
 set nocompatible              " required
 filetype off                  " required
 " Show Line numbers
