@@ -17,6 +17,15 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+" Brackets and commas autocomplete
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
@@ -66,3 +75,4 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " SimpylFold customization
 let g:SimpylFold_docstring_preview=1
+
